@@ -1,14 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skillBar{
     width: 100%;
     height: 100vh;
-    background-color: #111;
+    background: #F7FBFC;
+}
+h2{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    color: #F6F6F6;
+}
+.skill-container{
+    position: relative;
+    top: 200px;
+    max-width: 700px;
+    margin: auto;
+    background: #212121;
+    height: 500px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 5px;
+}
+.skill-info{
+    margin-bottom: 20px;
+}
+.skill-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.skill-container span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #F6F6F6;
+}
+.bar{
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #222;
+    border-radius: 20px;
+}
+.bar div{
+    height: 8px;
+    width: 0;
+    background-color: rgb(202, 236, 150);
+    border-radius: 20px;
+}
+#html-bar{
+    animation: 4s html-fill ease forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+#css-bar{
+    animation: 4s css-fill ease forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 70%;
+    }
+}
+#php-bar{
+    animation: 4s php-fill ease forwards;
+}
+@keyframes php-fill{
+    100%{
+        width: 85%;
+    }
+}
+#React-bar{
+    animation: 4s php-fill ease forwards;
+}
+@keyframes React-fill{
+    100%{
+        width: 95%;
+    }
 }
